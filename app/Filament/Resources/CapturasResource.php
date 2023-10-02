@@ -52,10 +52,10 @@ class CapturasResource extends Resource
                 ->required()
                 ->minLength(5)
                 ->maxLength(100),
-        ]);
-    }
+            ]);
+        }
 
-   
+
     public static function table(Table $table): Table
     {
         return $table

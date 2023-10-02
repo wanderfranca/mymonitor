@@ -15,7 +15,7 @@ trait RuleTime {
         
         // Tempo a ser subtraido - 10 minutos
         $horas = 0; 
-        $minutos = 10; 
+        $minutos = 05; 
         $segundos = 00;
 
         // Transforma o tempo a ser subtraido em segundos

@@ -17,7 +17,7 @@ class LojasResource extends Resource
     protected static ?string $model = Lojas::class;
     protected static ?string $modelMarca = Marcas::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-building-storefront';
 
     public static function form(Form $form): Form
     {
