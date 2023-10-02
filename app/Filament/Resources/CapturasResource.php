@@ -19,7 +19,6 @@ class CapturasResource extends Resource
     protected static ?string $model = Capturas::class;
     protected static ?string $modelLoja = Lojas::class;
     protected static ?string $modelMarca = Marcas::class;
-
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -53,7 +52,6 @@ class CapturasResource extends Resource
                 ->required()
                 ->minLength(5)
                 ->maxLength(100),
-
         ]);
     }
 
