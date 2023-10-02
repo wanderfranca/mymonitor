@@ -59,6 +59,7 @@ class CapturasResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
+        ->recordAction(null)
         ->columns([
             Tables\Columns\TextColumn::make('id')
                 ->searchable(),
