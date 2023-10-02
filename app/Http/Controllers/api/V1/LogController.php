@@ -27,7 +27,8 @@ class LogController extends Controller
             'ip' => 'nullable',
             'down' => 'nullable',
             'up' => 'nullable',
-            'datahora' => 'required'
+            'datahora' => 'required',
+            'marca' => 'nullable'
         ]);
 
         if ($validator->fails()) {

@@ -39,6 +39,16 @@ class CapturasResource extends Resource
                 ->options(Marcas::all()->pluck('nome', 'nome'))
                 ->native(false),
 
+            Select::make('tipohost')
+                ->label('Tipo de Host')
+                ->native(false)
+                ->options([
+                    'Totem' => 'Totem',
+                    'Servidor' => 'Servidor',
+                    'PDV' => 'PDV',
+                    'Impressora' => 'Impressora',
+                ]),
+
             Forms\Components\TextInput::make('host')
                 ->required()
                 ->minLength(5)

@@ -14,6 +14,7 @@ class Capturas extends Model
         'ip',
         'datahora',
         'marca',
+        'tipohost',
         'up',
         'down',
     ];
