@@ -22,7 +22,7 @@ trait RuleTime {
         $tempo = ($horas * 3600) + ($minutos * 60) + $segundos;
 
         // Subtrair $tempo de $agora
-        $novaDataHora= $timestamp - $tempo;
+        $novaDataHora = $timestamp - $tempo;
 
         // Data e hora apos a subtracao
         $datetime2 = date("Y-m-d H:i:s", $novaDataHora);

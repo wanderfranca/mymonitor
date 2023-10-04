@@ -12,9 +12,7 @@ use App\Http\Resources\V1\CapturaResource;
 class CapturaController extends Controller
 {
     use HttpResponses;
-    /**
-     * Display a listing of the resource.
-     */
+    
     public function index()
     {
         return CapturaResource::collection(Capturas::all());
@@ -44,9 +42,7 @@ class CapturaController extends Controller
         return $this->error('Algo deu errado', 4200); 
     }
 
-    /**
-     * Display the specified resource.
-     */
+ 
     public function show(string $id)
     {
         return new CapturaResource(Capturas::where('id', $id)->first());
