@@ -20,9 +20,6 @@ class CapturaController extends Controller
         return CapturaResource::collection(Capturas::all());
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -55,9 +52,6 @@ class CapturaController extends Controller
         return new CapturaResource(Capturas::where('id', $id)->first());
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
         $validator = Validator::make($request->all(), [
