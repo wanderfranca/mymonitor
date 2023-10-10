@@ -13,7 +13,7 @@ return new class extends Migration
             $table->increments('id');
             $table->string('loja');
             $table->string('host');
-            $table->string('tipo')->nullable();
+            $table->string('tipohost')->nullable();
             $table->string('ip')->nullable();
             $table->string('down')->nullable();
             $table->string('up')->nullable();

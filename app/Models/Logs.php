@@ -11,6 +11,7 @@ class Logs extends Model
     protected $fillable = [
         'loja',
         'host',
+        'tipohost',
         'ip',
         'down',
         'up',
