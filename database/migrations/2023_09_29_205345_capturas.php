@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('down')->nullable();
             $table->string('up')->nullable();
             $table->dateTime('datahora')->nullable();
-            $table->string('marca')->nullable();
             $table->timestamps();
         });
     }
