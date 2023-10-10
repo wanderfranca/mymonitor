@@ -13,10 +13,12 @@ return new class extends Migration
             $table->increments('id');
             $table->string('loja');
             $table->string('host');
-            $table->string('ip');
-            $table->string('down');
-            $table->string('up');
-            $table->dateTime('datahora');
+            $table->string('tipo')->nullable();
+            $table->string('ip')->nullable();
+            $table->string('down')->nullable();
+            $table->string('up')->nullable();
+            $table->string('marca')->nullable();
+            $table->dateTime('datahora')->nullable();
             $table->timestamps();
         });
     }

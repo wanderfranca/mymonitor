@@ -10,6 +10,20 @@ class lojas extends Model
     use HasFactory;
     protected $fillable = [
         'nome',
-        'marca'
+        'marca',
+        'cnpj',
+        'razao',
+        'cep',
+        'endereco',
+        'numero',
+        'complemento',
+        'bairro',
+        'cidade',
+        'uf',
+        'regiao',
+        'telefone',
+        'email',
+        'latitude',
+        'longitude',
     ];
 }

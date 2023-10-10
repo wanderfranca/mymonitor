@@ -13,9 +13,14 @@ return new class extends Migration
             $table->increments('id');
             $table->string('loja');
             $table->string('host');
+            $table->string('tipo')->nullable();
             $table->string('ip')->nullable();
             $table->string('down')->nullable();
             $table->string('up')->nullable();
+            $table->string('regiao')->nullable();
+            $table->string('teamviewer')->nullable();
+            $table->string('anydesk')->nullable();
+            $table->string('marca')->nullable();
             $table->dateTime('datahora')->nullable();
             $table->timestamps();
         });
