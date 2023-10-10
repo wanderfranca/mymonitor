@@ -23,7 +23,7 @@ class CapturasResource extends Resource
 
     public static function form(Form $form): Form
     {
-         return $form
+        return $form
         ->schema([
 
             Select::make('loja')
@@ -48,6 +48,7 @@ class CapturasResource extends Resource
                     'Impressora' => 'Impressora',
                 ]),
 
+
             Forms\Components\TextInput::make('host')
                 ->required()
                 ->minLength(5)
@@ -64,12 +65,17 @@ class CapturasResource extends Resource
             Tables\Columns\TextColumn::make('id')
                 ->searchable(),
             Tables\Columns\TextColumn::make('loja')
+                ->weight('bold')
                 ->searchable(),
             Tables\Columns\TextColumn::make('host')
+                ->searchable(),
+            Tables\Columns\TextColumn::make('tipohost')
                 ->searchable(),
             Tables\Columns\TextColumn::make('ip')
                 ->searchable(),
             Tables\Columns\TextColumn::make('datahora')
+                ->badge()
+                ->color('primary')
                 ->label('Captura')
                 ->dateTime('d-m-Y H:i:s')
                 ->sortable(),

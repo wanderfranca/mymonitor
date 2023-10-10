@@ -9,11 +9,11 @@ def enviar_pedido_put():
 
     iplocal = sk.gethostbyname(sk.gethostname())
 
-    url = 'http://mymonitor.com/api/V1/capturas/11'
+    url = 'http://mymonitor.com/api/V1/capturas/1'
     
     # DADOS PARA ENVIO
     data = {   
-                "loja": "SPOLETO RUA RB1",
+                "loja": "SPOLETO BARRA SHOPPING I",
                 "ip": iplocal,
                 "host": "Totem 01",
                 "tipohost": "Totem",
