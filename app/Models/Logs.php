@@ -13,7 +13,6 @@ class Logs extends Model
         'host',
         'ip',
         'down',
-        'tipohost',
         'up',
         'datahora',
         'marca',
