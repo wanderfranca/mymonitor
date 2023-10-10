@@ -69,8 +69,6 @@ class CapturasResource extends Resource
                 ->searchable(),
             Tables\Columns\TextColumn::make('ip')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('down'),
-            Tables\Columns\TextColumn::make('up'),
             Tables\Columns\TextColumn::make('datahora')
                 ->label('Captura')
                 ->dateTime('d-m-Y H:i:s')
