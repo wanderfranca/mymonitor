@@ -13,7 +13,7 @@ trait RuleTime {
         // Converter $agora para o formato Unix timestamp
         $timestamp = strtotime($agora);
         
-        // Tempo a ser subtraido - 10 minutos
+        // Tempo a ser subtraido - 5 minutos
         $horas = 0; 
         $minutos = 05; 
         $segundos = 00;
